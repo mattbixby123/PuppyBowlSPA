@@ -11,7 +11,7 @@ const AllPlayers = () => {
   const [searchParam, setSearchParam] = useState('');
 
   useEffect(() => {
-    fetchAllPlayers();
+    getAllPlayers();
   }, []); // Fetch players initially when component mounts
 
   const getAllPlayers = async () => {
@@ -53,11 +53,11 @@ const AllPlayers = () => {
       <NewPlayerForm onPlayerAdded={handlePlayerAdded} />
     </div>
 
-    {playersToDisplay.map((player) => {
+    {playersToDisplay.map((players) => {
       return (
-        <div key={player.id}>
-          <h3>{player.name}</h3>
-          <Link to={`/players/${player.id}`}>
+        <div key={players.id}>
+          <h3>{players.name}</h3>
+          <Link to={`/players/${players.id}`}>
             <button>See Details</button>
           </Link>
         </div>
