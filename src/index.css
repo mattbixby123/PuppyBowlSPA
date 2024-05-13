@@ -26,10 +26,13 @@ a:hover {
 }
 
 .NewPlayerForm {
-  margin-bottom: 20px; 
   border: 1px solid #646cff;
-  border-radius: 25px;
-  margin-top: 20px;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .NewPlayerForm input[type="text"] {
@@ -54,11 +57,18 @@ a:hover {
   background-color: #0056b3; /* Example button hover background color */
 }
 
-.singlePlayer {
+.playersGroup {
+  display: flex;
+  flex-wrap: row wrap;
+}
 
+.singlePlayer {
+  max-width: 300px;
   background-color: #BEBEBE;
   padding: 20px;
   border-radius: 10px;
+  margin: auto;
+  line-height: normal;
 }
 
 /* Style the heading within the .singlePlayer div */

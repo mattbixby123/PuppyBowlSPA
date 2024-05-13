@@ -53,6 +53,7 @@ const AllPlayers = () => {
       <NewPlayerForm onPlayerAdded={handlePlayerAdded} />
     </div>
 
+    <div className="playersGroup">
     {playersToDisplay.map((players) => {
       return (
         <div key={players.id}>
@@ -63,6 +64,7 @@ const AllPlayers = () => {
         </div>
       );
     })}
+    </div>
     </>
   );
 }
